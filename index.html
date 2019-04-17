@@ -21,8 +21,8 @@
 
     // define the functions our commands will run.
     var hello = function() {
-      $("#hello").slideDown("slow");
-      scrollTo("#section_hello");
+      $("#cutlet").slideDown("slow");
+      scrollTo("#section_cutlet");
     };
 
     var showFlickr = function(tag) {
@@ -68,7 +68,7 @@
     // * The value is the action to do.
     //   You can pass a function, a function name (as a string), or write your function as part of the commands object.
     var commands = {
-      'hello (there)':        hello,
+      'cutlet (there)':        cutlet,
       'show me *search':      showFlickr,
       'show :type report':    showTPS,
       'let\'s get started':   getStarted,
@@ -110,10 +110,10 @@
     <img src="images/icon_speech.png" alt="Speech baloon icon">
     <img src="images/icon_js.png" alt="JavaScript icon">
   </section>
-  <section id="section_hello">
+  <section id="section_cutlet">
     <p><em>Go ahead, try it&hellip;</em></p>
-    <p class="voice_instructions">Say "Hello!"</p>
-    <p id="hello" class="hidden">Annyang!</p>
+    <p class="voice_instructions">Say "Cutlet!"</p>
+    <p id="cutlet" class="hidden">Annyang!</p>
   </section>
   <section id="section_image_search">
     <p><em>Let's try something more interesting&hellip;</em></p>
